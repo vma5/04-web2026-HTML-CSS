@@ -1,8 +1,6 @@
 # 04-web2026-HTML-CSS
 
-# O objetivo desta atividade é que você ponha em prática o que você pode aprender de HTML e CSS até aqui.  Você irá criar um site com no mínimo 4 páginas, sobre o tema que você quiser, utilizando HTML e CSS.
-
-🍳 Sabores do Mundo - Portal de Receitas
+# 🍳 Sabores do Mundo - Portal de Receitas
 O Sabores do Mundo é um site estático desenvolvido para amantes da culinária, oferecendo uma interface visualmente rica e organizada para explorar receitas doces e salgadas. O projeto foca-se na experiência do utilizador (UX) e na simplicidade de navegação, utilizando técnicas modernas de design sem a necessidade de scripts complexos.
 
 🚀 Funcionalidades do Site
