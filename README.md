@@ -1,4 +1,4 @@
-# 04-web2026-HTML-CSS
+# 05-web2026-HTML-CSS
 
 # 🍳 Sabores do Mundo - Portal de Receitas
 O Sabores do Mundo é um site estático desenvolvido para amantes da culinária, oferecendo uma interface visualmente rica e organizada para explorar receitas doces e salgadas. O projeto foca-se na experiência do utilizador (UX) e na simplicidade de navegação, utilizando técnicas modernas de design sem a necessidade de scripts complexos.
