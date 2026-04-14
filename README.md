@@ -39,6 +39,10 @@ Plaintext
 ├── banner.jpg          # Imagem de fundo do banner (editada)
 ├── image_1.png         # Imagem do Bolo de Cenoura
 └── image_3.png         # Imagem do Strogonoff
+└── image_4.png         # Imagem do bolo de Limão
+└── image_5.png         # Imagem do Mousse de Maracujá
+└── image_6.png         # Imagem da Lasanha Bolonhese
+└── image_7.png         # Imagem da Parmegiana de Frango
 
 🛠️ Tecnologias Utilizadas
 HTML5: Estruturação semântica de todo o conteúdo.

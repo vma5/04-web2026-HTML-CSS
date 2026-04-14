@@ -7,8 +7,13 @@
 </head>
 <body>
     <header>
-        <h1>🍝 Receitas Salgadas</h1>
-        <nav><a href="index.html">Voltar para Home</a></nav>
+        <h1> Nossos Salgados</h1>
+                <nav>
+            <a href="index.html">Home</a>
+            <a href="doces.html">Doces</a>
+            <a href="salgados.html">Salgados</a>
+            <a href="login.html">Login</a>
+        </nav>
     </header>
 
     <main class="recipe-grid">
@@ -16,21 +21,69 @@
             <img src="images/strognoff.jpg" alt="Strogonoff">
             <div class="card-content">
                 <h3>Strogonoff de Frango</h3>
-                <label for="modal-strogonoff" class="btn-ver">Ver Passo a Passo</label>
+                <label for="modal-strog" class="btn-ver">Ver Receita</label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/lasanha a bolonhesa.jpg" alt="Lasanha">
+            <div class="card-content">
+                <h3>Lasanha à Bolonhesa</h3>
+                <label for="modal-lasanha" class="btn-ver">Ver Receita</label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/parmegiana de frango.jpg" alt="Parmegiana">
+            <div class="card-content">
+                <h3>Frango à Parmegiana</h3>
+                <label for="modal-parme" class="btn-ver">Ver Receita</label>
             </div>
         </div>
     </main>
 
-    <input type="checkbox" id="modal-strogonoff" class="modal-check">
+    <input type="checkbox" id="modal-strog" class="modal-check">
     <div class="modal">
         <div class="modal-content">
-            <label for="modal-strogonoff" class="close-btn">&times;</label>
+            <label for="modal-strog" class="close-btn">&times;</label>
             <h2>Strogonoff de Frango</h2>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/fu_FxPsgNgE?si=CFnRV5JM_CD3Kc6D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fu_FxPsgNgE?si=bPHOeqGJhadB0fdy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <h3>Ingredientes</h3>
-            <p>500g de frango, 1 cebola, ketchup, mostarda, 1 caixa de creme de leite.</p>
+            <p>500g de peito de frango, 1 cebola picada, 1 lata de creme de leite, 3 colheres de ketchup, 1 colher de mostarda, sal e champignon a gosto.</p>
+            <h3>Modo de Preparo</h3>
+            <p>Refogue a cebola e o frango até dourar. Adicione o ketchup, a mostarda e o champignon. Desligue o fogo, misture o creme de leite e sirva com batata palha.</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-lasanha" class="modal-check">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-lasanha" class="close-btn">&times;</label>
+            <h2>Lasanha à Bolonhesa</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4hYUrBh0Sls?si=2kJ_Nj7K-5a-cBBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Ingredientes</h3>
+            <p>1 pacote de massa para lasanha, 500g de carne moída, 2 sachês de molho de tomate, 300g de presunto, 300g de muçarela, queijo ralado.</p>
+            <h3>Modo de Preparo</h3>
+            <p>Prepare o molho bolonhesa com a carne. Monte em camadas: molho, massa, presunto e queijo. Repita até acabar. Finalize com queijo ralado e asse por 30 minutos.</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-parme" class="modal-check">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-parme" class="close-btn">&times;</label>
+            <h2>Frango à Parmegiana</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nnkID69NZ4g?si=q5R7xlxxCdaId_M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Ingredientes</h3>
+            <p>4 filés de frango, 2 ovos batidos, farinha de rosca para empanar, 1 sachê de molho de tomate, 200g de muçarela, sal e pimenta.</p>
+            <h3>Modo de Preparo</h3>
+            <p>Tempere, empanar e frite os filés. Em um refratário, coloque o molho, os filés fritos e cubra com muçarela. Leve ao forno apenas para derreter o queijo.</p>
         </div>
     </div>
 </body>

@@ -7,31 +7,87 @@
 </head>
 <body>
     <header>
-        <h1>🍰 Receitas Doces</h1>
-        <nav><a href="index.html">Voltar para Home</a></nav>
+        <h1> Nossos Doces</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="doces.html">Doces</a>
+            <a href="salgados.html">Salgados</a>
+            <a href="login.html">Login</a>
+        </nav>
     </header>
 
     <main class="recipe-grid">
+        
         <div class="card">
             <img src="images/bolo de cenoura.jpg" alt="Bolo de Cenoura">
             <div class="card-content">
-                <h3>Bolo de Cenoura com Chocolate</h3>
-                <label for="modal-bolo" class="btn-ver">Ver Passo a Passo</label>
+                <h3>Bolo de Cenoura</h3>
+                <label for="modal-cenoura" class="btn-ver">Ver Receita</label>
             </div>
         </div>
+
+        <div class="card">
+            <img src="images/mousse de maracujá.jpg" alt="Mousse">
+            <div class="card-content">
+                <h3>Mousse de Maracujá</h3>
+                <label for="modal-mousse" class="btn-ver">Ver Receita</label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/bolo de limão.jpg" alt="Bolo Limão">
+            <div class="card-content">
+                <h3>Bolo de Limão</h3>
+                <label for="modal-limao" class="btn-ver">Ver Receita</label>
+            </div>
+        </div>
+
     </main>
 
-    <input type="checkbox" id="modal-bolo" class="modal-check">
+    <input type="checkbox" id="modal-cenoura" class="modal-check">
     <div class="modal">
         <div class="modal-content">
-            <label for="modal-bolo" class="close-btn">&times;</label>
-            <h2>Bolo de Cenoura</h2>
+            <label for="modal-cenoura" class="close-btn">&times;</label>
+            <h2>Bolo de Cenoura com Chocolate</h2>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JH3F9TyH7hg?si=aZQRp4nB_cmwo3UG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JH3F9TyH7hg?si=qAT-PiPPPQfyRlAB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
             </div>
             <h3>Ingredientes</h3>
-            <p>3 cenouras, 4 ovos, 2 xíc. de açúcar, 1 xíc. de óleo, 2 xíc. de farinha, 1 colher de fermento.</p>
+            <p>3 cenouras, 4 ovos, 1 xícara de óleo, 2 xícaras de açúcar, 2 xícaras de farinha, 1 colher de fermento.</p>
+            <h3>Preparo</h3>
+            <p>Bata os líquidos no liquidificador. Misture com os secos em uma tigela. Asse a 180°C por 40 minutos.</p>
         </div>
     </div>
+
+    <input type="checkbox" id="modal-mousse" class="modal-check">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-mousse" class="close-btn">&times;</label>
+            <h2>Mousse de Maracujá</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CtinK3nN38I?si=5cqjh5JA4Gnbvo9O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Ingredientes</h3>
+            <p>1 lata de leite condensado, 1 lata de creme de leite, 1 xícara de suco de maracujá concentrado, 1 envelope de gelatina sem sabor (opcional).</p>
+            <h3>Preparo</h3>
+            <p>Bata leite condensado, creme de leite e suco concentrado de maracujá no liquidificador. Deixe na geladeira por 3 horas.</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-limao" class="modal-check">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-limao" class="close-btn">&times;</label>
+            <h2>Bolo de Limão</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NLuXgAJgjuI?si=3_Mx0BejRU2bocs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Ingredientes</h3>
+            <p>3 ovos, 2 xícaras de açúcar, 3 xícaras de farinha, 1 xícara de leite, 1/2 xícara de óleo, suco e raspas de 2 limões, 1 colher de fermento.</p>
+            <h3>Preparo</h3>
+            <p>Massa de pão de ló batida com suco e raspas de limão. Cobertura de leite condensado com limão por cima.</p>
+        </div>
+    </div>
+
 </body>
 </html>
