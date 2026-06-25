@@ -326,3 +326,68 @@ input {
     color: #666;
     text-align: center;
 }
+
+/* Configuração básica do Card */
+.card-login {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+/* Deixar os inputs um abaixo do outro com espaçamento */
+.card-login input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+/* Botão de envio */
+.btn-submit {
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #ee5253;
+}
+
+/* Links de alternar tela */
+.alternar-tela {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.alternar-tela a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.alternar-tela a:hover {
+    text-decoration: underline;
+}
+
+.aviso-cadastro {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #777;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}

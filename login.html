@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Sabores do Mundo</title>
+    <title>Acessar - Sabores do Mundo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,16 +18,95 @@
 
     <main class="login-container">
         <div class="card-login">
-            <h2>Criar Conta</h2>
-            <form action="#" method="POST">
-                <input type="text" placeholder="Nome de usuário" required>
-                <input type="email" placeholder="Seu E-mail" required>
-                <input type="password" placeholder="Sua Senha" required>
-                
-                <button type="submit" class="btn-submit">Confirmar Cadastro</button>
-            </form>
-            <p class="aviso-cadastro">O cadastro permitirá que você poste receitas em breve!</p>
+            
+            <div id="secao-login">
+                <h2>Entrar</h2>
+                <form id="form-login">
+                    <input type="email" id="login-email" placeholder="Seu E-mail" required>
+                    <input type="password" id="login-senha" placeholder="Sua Senha" required>
+                    <button type="submit" class="btn-submit">Entrar</button>
+                </form>
+                <p class="alternar-tela">Não tem uma conta? <a href="#" id="link-ir-para-cadastro">Cadastre-se</a></p>
+            </div>
+
+            <div id="secao-cadastro" style="display: none;">
+                <h2>Criar Conta</h2>
+                <form id="form-cadastro">
+                    <input type="text" id="cad-usuario" placeholder="Nome de usuário" required>
+                    <input type="email" id="cad-email" placeholder="Seu E-mail" required>
+                    <input type="password" id="cad-senha" placeholder="Sua Senha" required>
+                    <button type="submit" class="btn-submit">Confirmar Cadastro</button>
+                </form>
+                <p class="alternar-tela">Já tem conta? <a href="#" id="link-ir-para-login">Faça Login</a></p>
+            </div>
+
+            <p class="aviso-cadastro">O cadastro permite que você poste receitas (Em breve).</p>
         </div>
     </main>
+
+    <script>
+        // Elementos de alternância de tela
+        const secaoLogin = document.getElementById('secao-login');
+        const secaoCadastro = document.getElementById('secao-cadastro');
+        const irParaCadastro = document.getElementById('link-ir-para-cadastro');
+        const irParaLogin = document.getElementById('link-ir-para-login');
+
+        // Alternar entre Login e Cadastro
+        irParaCadastro.addEventListener('click', (e) => {
+            e.preventDefault();
+            secaoLogin.style.display = 'none';
+            secaoCadastro.style.style.display = 'block'; // Correção para garantir exibição
+            secaoCadastro.setAttribute('style', 'display: block;');
+        });
+
+        irParaLogin.addEventListener('click', (e) => {
+            e.preventDefault();
+            secaoCadastro.style.display = 'none';
+            secaoLogin.setAttribute('style', 'display: block;');
+        });
+
+        // LÓGICA DE CADASTRO
+        document.getElementById('form-cadastro').addEventListener('submit', function(e) {
+            e.preventDefault(); // Impede a página de recarregar
+
+            const usuario = document.getElementById('cad-usuario').value;
+            const email = document.getElementById('cad-email').value;
+            const senha = document.getElementById('cad-senha').value;
+
+            // Simula salvar no banco de dados usando o LocalStorage do navegador
+            const dadosUsuario = { usuario, email, senha };
+            localStorage.setItem(email, JSON.stringify(dadosUsuario));
+
+            alert('Cadastro realizado com sucesso! Agora faça o seu login.');
+            this.reset();
+            irParaLogin.click(); // Joga o usuário para a tela de login
+        });
+
+        // LÓGICA DE LOGIN
+        document.getElementById('form-login').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('login-email').value;
+            const senha = document.getElementById('login-senha').value;
+
+            // Busca o usuário no LocalStorage pelo e-mail
+            const usuarioSalvo = localStorage.getItem(email);
+
+            if (usuarioSalvo) {
+                const dados = JSON.parse(usuarioSalvo);
+                
+                // Valida a senha
+                if (dados.senha === senha) {
+                    alert(`Bem-vindo de volta, ${dados.usuario}! Login efetuado com sucesso.`);
+                    // Aqui você redirecionaria ele para a página interna:
+                    // window.location.href = "dashboard.html";
+                } else {
+                    alert('Senha incorreta. Tente novamente.');
+                }
+            } else {
+                alert('E-mail não encontrado. Crie uma conta primeiro!');
+            }
+        });
+    </script>
 </body>
 </html>
