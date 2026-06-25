@@ -195,6 +195,30 @@
             <p>Massa: 4 xícaras de caldo de frango, 4 xícaras de farinha de trigo, 2 colheres de manteiga. Recheio: 500g de frango desfiado, 1 cebola, temperos a gosto e 200g de requeijão tipo Catupiry.</p>
             <h3>Modo de Preparo</h3>
             <p>Ferva o caldo com a manteiga, junte a farinha de uma vez e mexa até soltar da panela. Sove a massa morna. Recheie porções de massa com o frango temperado e um pouco de Catupiry, modele, empanar com ovo e farinha de rosca, e frite em óleo quente.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form" onsubmit="enviarComentarioForm(event, this)">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea class="comment-text" placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Beatriz Souza</strong><span class="stars">⭐⭐⭐⭐⭐</span></div>
+                        <p>A massa é super fácil de trabalhar e o Catupiry dá o toque especial. Maravilhosa!</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
