@@ -187,3 +187,142 @@ input {
     border-radius: 8px;
     box-sizing: border-box;
 }
+
+/* --- Seção de Avaliações e Comentários (Chat) --- */
+.comments-section {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 2px dashed #ddd;
+    text-align: left;
+}
+
+.comments-section h3 {
+    color: var(--dark);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Formulário de Envio */
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.rating-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.rating-input label {
+    color: #414040;
+}
+
+.rating-input select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: var(--white);
+    font-size: 14px;
+    color: #414040;
+    cursor: pointer;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 90px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    font-family: inherit;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: var(--white);
+}
+
+.comment-form textarea:focus, .rating-input select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn-enviar {
+    background-color: var(--dark);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: var(--primary);
+}
+
+/* Lista de Mensagens Postadas */
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-item {
+    background-color: #fdfdfd;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.comment-header strong {
+    color: #333;
+}
+
+.stars {
+    letter-spacing: 2px;
+}
+
+.comment-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Estilo do botão de confirmação */
+.btn-submit {
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: #ff6b6b; /* Escolha a cor do seu tema */
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #ee5253; /* Efeito ao passar o mouse */
+}
+
+/* Estilo do texto de aviso */
+.aviso-cadastro {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+}

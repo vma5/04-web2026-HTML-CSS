@@ -7,9 +7,9 @@
 </head>
 <body>
     <header>
-        <h1> Nossos Salgados</h1>
+        <h1> Pratos Salgados</h1>
                 <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Início</a>
             <a href="doces.html">Doces</a>
             <a href="salgados.html">Salgados</a>
             <a href="login.html">Login</a>
@@ -40,6 +40,30 @@
                 <label for="modal-parme" class="btn-ver">Ver Receita</label>
             </div>
         </div>
+
+        <div class="card">
+            <img src="images/coxinha de frango.jpg" alt="Coxinha">
+            <div class="card-content">
+                <h3>Coxinha de Frango com Catupiry</h3>
+            <label for="modal-coxinha" class="btn-ver">Ver Receita</label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/feijão tropeiro.jpg" alt="Feijão Tropeiro">
+            <div class="card-content">
+                <h3>Feijão Tropeiro</h3>
+            <label for="modal-tropeiro" class="btn-ver">Ver Receita</label>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/pizzas.jpg" alt="Pizzas">
+            <div class="card-content">
+                <h3>Pizzas</h3>
+            <label for="modal-pizza" class="btn-ver">Ver Receita</label>
+            </div>
+        </div>
     </main>
 
     <input type="checkbox" id="modal-strog" class="modal-check">
@@ -54,6 +78,30 @@
             <p>500g de peito de frango, 1 cebola picada, 1 lata de creme de leite, 3 colheres de ketchup, 1 colher de mostarda, sal e champignon a gosto.</p>
             <h3>Modo de Preparo</h3>
             <p>Refogue a cebola e o frango até dourar. Adicione o ketchup, a mostarda e o champignon. Desligue o fogo, misture o creme de leite e sirva com batata palha.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form" onsubmit="enviarComentarioForm(event, this)">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea class="comment-text" placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Marcos Lima</strong><span class="stars">⭐⭐⭐⭐⭐</span></div>
+                        <p>Receita clássica e sem erro! O molho ficou super cremoso.</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -69,6 +117,30 @@
             <p>1 pacote de massa para lasanha, 500g de carne moída, 2 sachês de molho de tomate, 300g de presunto, 300g de muçarela, queijo ralado.</p>
             <h3>Modo de Preparo</h3>
             <p>Prepare o molho bolonhesa com a carne. Monte em camadas: molho, massa, presunto e queijo. Repita até acabar. Finalize com queijo ralado e asse por 30 minutos.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form" onsubmit="enviarComentarioForm(event, this)">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea class="comment-text" placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Julia Costa</strong><span class="stars">⭐⭐⭐⭐⭐</span></div>
+                        <p>Ficou perfeita e super suculenta. Rendeu muito bem para o almoço de domingo!</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -84,7 +156,156 @@
             <p>4 filés de frango, 2 ovos batidos, farinha de rosca para empanar, 1 sachê de molho de tomate, 200g de muçarela, sal e pimenta.</p>
             <h3>Modo de Preparo</h3>
             <p>Tempere, empanar e frite os filés. Em um refratário, coloque o molho, os filés fritos e cubra com muçarela. Leve ao forno apenas para derreter o queijo.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form" onsubmit="enviarComentarioForm(event, this)">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea class="comment-text" placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Felipe Almeida</strong><span class="stars">⭐⭐⭐⭐</span></div>
+                        <p>Muito bom! Uma dica: use farinha Panko para ficar ainda mais crocante.</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+
+    <input type="checkbox" id="modal-coxinha" class="modal-check">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-coxinha" class="close-btn">&times;</label>
+            <h2>Coxinha de Frango com Catupiry</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ja8enD6ykQY?si=C4lJhBNLl6znc1MB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Ingredientes</h3>
+            <p>Massa: 4 xícaras de caldo de frango, 4 xícaras de farinha de trigo, 2 colheres de manteiga. Recheio: 500g de frango desfiado, 1 cebola, temperos a gosto e 200g de requeijão tipo Catupiry.</p>
+            <h3>Modo de Preparo</h3>
+            <p>Ferva o caldo com a manteiga, junte a farinha de uma vez e mexa até soltar da panela. Sove a massa morna. Recheie porções de massa com o frango temperado e um pouco de Catupiry, modele, empanar com ovo e farinha de rosca, e frite em óleo quente.</p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-tropeiro" class="modal-check">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-tropeiro" class="close-btn">&times;</label>
+            <h2>Feijão Tropeiro</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3bLZMmFqAwY?si=ilqfQM577gi4og7P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Ingredientes</h3>
+            <p>500g de feijão cozido (sem caldo), 200g de bacon, 250g de linguiça calabresa, 1 cebola, 3 dentes de alho, 5 ovos, 1 xícara de farinha de mandioca, 1 maço de couve picada e cheiro-verde.</p>
+            <h3>Modo de Preparo</h3>
+            <p>Frite o bacon e a calabresa, reserve. Na mesma gordura, refogue a cebola e o alho, depois frite os ovos e mexa-os. Adicione a couve até murchar. Misture o feijão, as carnes, a farinha de mandioca aos poucos e finalize com o cheiro-verde.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form" onsubmit="enviarComentarioForm(event, this)">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea class="comment-text" placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Beatriz Souza</strong><span class="stars">⭐⭐⭐⭐⭐</span></div>
+                        <p>A massa é super fácil de trabalhar e o Catupiry dá o toque especial. Maravilhosa!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-pizza" class="modal-check">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-pizza" class="close-btn">&times;</label>
+            <h2>Pizzas</h2>
+            <div class="video-container">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/6bRO65VeuTM?si=00GbnoVx2ZlFswz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Ingredientes</h3>
+            <p>Massa: 500g de farinha de trigo, 1 colher de sopa de açúcar, 1 colher de chá de sal, 1 sachê de fermento biológico seco, 3 colheres de sopa de azeite, 300ml de água morna. Recheio: Molho de tomate, queijo muçarela e orégano.</p>
+            <h3>Modo de Preparo</h3>
+            <p>Misture os ingredientes secos, adicione a água e o azeite, e sove até ficar homogênea. Deixe crescer por 40 minutos. Abra a massa, espalhe o molho de tomate, adicione a muçarela e os recheios de sua preferência. Leve ao forno pré-aquecido a 250°C até dourar as bordas.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form" onsubmit="enviarComentarioForm(event, this)">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea class="comment-text" placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Amanda Reis</strong><span class="stars">⭐⭐⭐⭐⭐</span></div>
+                        <p>Massa leve e crocante! Fiz metade muçarela e metade calabresa.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+    function enviarComentarioForm(event, formulario) {
+        // Impede que a página recarregue ao enviar o formulário
+        event.preventDefault();
+
+        // Captura os dados inseridos pelo usuário
+        const notaSelecionada = formulario.querySelector('.rating-select').value;
+        const textoComentario = formulario.querySelector('.comment-text').value;
+        const listaComentarios = formulario.closest('.comments-section').querySelector('.comments-list');
+
+        // Cria dinamicamente a estrutura HTML para o novo comentário
+        const novoComentario = document.createElement('div');
+        novoComentario.classList.add('comment-item');
+        
+        novoComentario.innerHTML = `
+            <div class="comment-item">
+                <div class="comment-header">
+                    <strong>Visitante</strong>
+                    <span class="stars">${notaSelecionada}</span>
+                </div>
+                <p>${textoComentario}</p>
+            </div>
+        `;
+
+        // Adiciona o novo comentário no início da lista daquela receita específica
+        listaComentarios.prepend(novoComentario);
+
+        // Limpa a caixa de texto
+        formulario.querySelector('.comment-text').value = '';
+    }
+    </script>
 </body>
 </html>

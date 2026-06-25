@@ -7,9 +7,9 @@
 </head>
 <body>
     <header>
-        <h1> Nossos Doces</h1>
+        <h1> Pratos Doces</h1>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Início</a>
             <a href="doces.html">Doces</a>
             <a href="salgados.html">Salgados</a>
             <a href="login.html">Login</a>
@@ -23,6 +23,28 @@
             <div class="card-content">
                 <h3>Bolo de Cenoura</h3>
                 <label for="modal-cenoura" class="btn-ver">Ver Receita</label>
+            </div>
+        </div>
+<div class="card">
+            <img src="images/pudim.jpg" alt="Bolo de Cenoura">
+            <div class="card-content">
+                    <h3>Pudim de Leite Condensado</h3>
+                <label for="modal-pudim" class="btn-ver">Ver Receita</label>
+                </div>
+            </div>
+            <div class="card">
+            <img src="images/brigadeiro.jpg" alt="Bolo de Cenoura">
+            <div class="card-content">
+                    <h3>Brigadeiro Gourmet</h3>
+                <label for="modal-brigadeiro" class="btn-ver">Ver Receita</label>
+                </div>
+            </div>
+            <div class="card">
+            <img src="images/romeu e julieta.jpg" alt="Bolo de Cenoura">
+            <div class="card-content">
+                    <h3>Romeu e Julieta</h3>
+                <label for="modal-romeu-julieta" class="btn-ver">Ver Receita</label>
+                </div>
             </div>
         </div>
 
@@ -56,6 +78,158 @@
             <p>3 cenouras, 4 ovos, 1 xícara de óleo, 2 xícaras de açúcar, 2 xícaras de farinha, 1 colher de fermento.</p>
             <h3>Preparo</h3>
             <p>Bata os líquidos no liquidificador. Misture com os secos em uma tigela. Asse a 180°C por 40 minutos.</p>
+            <hr>
+
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                
+                <form class="comment-form" onsubmit="event.preventDefault();">
+                    <div class="rating-input">
+                        <label for="rating-select">Sua nota:</label>
+                        <select id="rating-select">
+                            <option value="5">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="4">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="3">⭐⭐⭐ (Bom)</option>
+                            <option value="2">⭐⭐ (Regular)</option>
+                            <option value="1">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header">
+                            <strong>Maria Silva</strong>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p>Ficou maravilhoso! O bolo cresceu bastante e a calda de chocolate ficou bem crocante.</p>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="comment-header">
+                            <strong>João Santos</strong>
+                            <span class="stars">⭐⭐⭐⭐</span>
+                        </div>
+                        <p>Muito bom, mas achei que 1 xícara de óleo deixa um pouco pesado. Na próxima vou tentar com 1/2 xícara.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+<input type="checkbox" id="modal-pudim" class="modal-check">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-pudim" class="close-btn">&times;</label>
+            <h2>Pudim de Leite Condensado</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8817VZCSMGI?si=PiLs8vf6dgjKSdy3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Ingredientes</h3>
+            <p>1 lata de leite condensado, 1 lata de leite (use a lata de leite condensado como medida), 3 ovos, 1 xícara de açúcar para a calda.</p>
+            <h3>Preparo</h3>
+            <p>Derreta o açúcar na forma para fazer a calda. Bata os outros ingredientes no liquidificador, despeje na forma e asse em banho-maria por cerca de 1 hora e 30 minutos a 180°C.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Marcos Lima</strong><span class="stars">⭐⭐⭐⭐⭐</span></div>
+                        <p>Ficou lisinho e sem furinhos, do jeito que eu gosto! Receita perfeita.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+<input type="checkbox" id="modal-brigadeiro" class="modal-check">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-brigadeiro" class="close-btn">&times;</label>
+            <h2>Brigadeiro Gourmet</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LcaOVowHJqk?si=tSomXEsL46xZ8dyT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Ingredientes</h3>
+            <p>1 lata de leite condensado, 1 colher de sopa de manteiga sem sal, 150g de chocolate em barra meio amargo picado, granulado gourmet para confeitar.</p>
+            <h3>Preparo</h3>
+            <p>Em uma panela, misture o leite condensado, a manteiga e o chocolate picado. Cozinhe em fogo baixo, mexendo sempre, até desgrudar do fundo da panela. Deixe esfriar, faça bolinhas e passe no granulado.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Julia Costa</strong><span class="stars">⭐⭐⭐⭐⭐</span></div>
+                        <p>O chocolate meio amargo quebra o doce excessivo. Faço sempre para vender!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <input type="checkbox" id="modal-romeu-julieta" class="modal-check">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-romeu-julieta" class="close-btn">&times;</label>
+            <h2>Romeu e Julieta</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zdJTeyCJHtg?si=j3NUqrS_utlxvToC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Ingredientes</h3>
+            <p>300g de queijo minas padrão ou queijo coalho fatiado, 300g de goiabada cascão fatiada.</p>
+            <h3>Preparo</h3>
+            <p>Monte os pratinhos ou petiscos intercalando uma fatia de queijo com uma fatia de goiabada. Pode ser servido frio ou aquecido levemente no forno para derreter.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Pedro Souza</strong><span class="stars">⭐⭐⭐⭐</span></div>
+                        <p>Fica muito bom se derreter um pouquinho o queijo no micro-ondas antes!</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -71,6 +245,30 @@
             <p>1 lata de leite condensado, 1 lata de creme de leite, 1 xícara de suco de maracujá concentrado, 1 envelope de gelatina sem sabor (opcional).</p>
             <h3>Preparo</h3>
             <p>Bata leite condensado, creme de leite e suco concentrado de maracujá no liquidificador. Deixe na geladeira por 3 horas.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Ana Paula</strong><span class="stars">⭐⭐⭐⭐⭐</span></div>
+                        <p>Rápido, prático e muito azedinho na medida certa. Adorei!</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -86,8 +284,65 @@
             <p>3 ovos, 2 xícaras de açúcar, 3 xícaras de farinha, 1 xícara de leite, 1/2 xícara de óleo, suco e raspas de 2 limões, 1 colher de fermento.</p>
             <h3>Preparo</h3>
             <p>Massa de pão de ló batida com suco e raspas de limão. Cobertura de leite condensado com limão por cima.</p>
+        <hr>
+            <section class="comments-section">
+                <h3>Avaliações e Comentários</h3>
+                <form class="comment-form">
+                    <div class="rating-input">
+                        <label>Sua nota:</label>
+                        <select class="rating-select">
+                            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ (Excelente)</option>
+                            <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ (Muito Bom)</option>
+                            <option value="⭐⭐⭐">⭐⭐⭐ (Bom)</option>
+                            <option value="⭐⭐">⭐⭐ (Regular)</option>
+                            <option value="⭐">⭐ (Ruim)</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="O que você achou dessa receita? Conta pra gente..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Comentário</button>
+                </form>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header"><strong>Roberto Fukuda</strong><span class="stars">⭐⭐⭐⭐</span></div>
+                        <p>A cobertura azedinha com o bolo doce combina perfeitamente com um café.</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+
+    <script>
+        document.querySelectorAll('.comment-form').forEach(form => {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Impede a página de recarregar
+                
+                // Pega os elementos internos do formulário atual
+                const textarea = this.querySelector('textarea');
+                const select = this.querySelector('.rating-select');
+                const commentsList = this.closest('.comments-section').querySelector('.comments-list');
+                
+                if (textarea.value.trim() === '') return;
+
+                // Cria a estrutura do novo comentário
+                const commentItem = document.createElement('div');
+                commentItem.classList.add('comment-item');
+                
+                commentItem.innerHTML = `
+                    <div class="comment-header">
+                        <strong>Você (Visitante)</strong>
+                        <span class="stars">${select.value}</span>
+                    </div>
+                    <p>${textarea.value}</p>
+                `;
+                
+                // Adiciona o novo comentário no topo da lista
+                commentsList.insertBefore(commentItem, commentsList.firstChild);
+                
+                // Limpa o campo de texto para o próximo comentário
+                textarea.value = '';
+            });
+        });
+    </script>
 
 </body>
 </html>

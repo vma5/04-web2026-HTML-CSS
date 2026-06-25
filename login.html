@@ -2,25 +2,31 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Login - Sabores do Mundo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Sabores do Mundo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1> Minha Conta</h1>
-        <nav><a href="index.html">Home</a></nav>
+        <h1>Minha Conta</h1>
+        <nav><a href="index.html">Início</a>
+             <a href="doces.html">Doces</a>
+             <a href="salgados.html">Salgados</a>
+             <a href="login.html">Login</a>
+        </nav>
     </header>
 
     <main class="login-container">
         <div class="card-login">
-            <h2>Entrar ou Cadastrar</h2>
-            <form action="#">
+            <h2>Criar Conta</h2>
+            <form action="#" method="POST">
                 <input type="text" placeholder="Nome de usuário" required>
-                <input type="email" placeholder="Seu E-mail">
+                <input type="email" placeholder="Seu E-mail" required>
                 <input type="password" placeholder="Sua Senha" required>
-                <button type="submit" class="btn-banner" style="border:none; width:100%; cursor:pointer;">Confirmar Cadastro</button>
+                
+                <button type="submit" class="btn-submit">Confirmar Cadastro</button>
             </form>
-            <p style="margin-top:15px; font-size: 0.8rem;">O cadastro permite que você poste receitas (Em breve).</p>
+            <p class="aviso-cadastro">O cadastro permitirá que você poste receitas em breve!</p>
         </div>
     </main>
 </body>
